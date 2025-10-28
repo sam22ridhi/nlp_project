@@ -1,0 +1,52 @@
+# Core Web Framework
+fastapi>=0.115.0
+uvicorn[standard]>=0.34.0
+python-multipart
+python-dotenv
+
+# Authentication & Security
+pyjwt>=2.10.0
+cryptography
+python-jose[cryptography]
+
+# HTTP Client
+httpx
+
+# AI & LLM
+groq
+crewai
+crewai-tools
+
+# LangChain Ecosystem - Let pip resolve compatible versions
+langchain-core>=0.3.79,<0.4.0
+langchain>=0.3.25,<0.4.0
+langchain-community>=0.3.24,<0.4.0
+langchain-text-splitters>=0.3.25,<0.4.0
+langchain-groq
+langchain-unstructured
+
+# Document Processing
+unstructured>=0.16.0
+unstructured-client
+pypdf
+python-docx
+python-pptx
+pillow
+pdf2image
+
+# Embeddings & Vector Store
+faiss-cpu
+fastembed
+
+# Scientific Computing
+numpy>=1.26.0,<2.0.0
+scikit-learn
+arxiv
+
+# ONNX Runtime - Required for langchain-unstructured
+onnxruntime>=1.19.0,<1.20.0
+
+# Data Processing
+pydantic>=2.10.0
+aiofiles
+requests
